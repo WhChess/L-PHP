@@ -1,8 +1,9 @@
 <?php
 /*
- * "===" VERİ TİPLERİ DAHİL EŞİT DEMEK.
- * "==" SADECE GÖRÜNÜŞLERİ EŞİT OLSA YETERLİDİR.
- *
+ * "===" VERİ TİPLERİ DAHİL EŞİT DEMEK. AYNIDIR.
+ * "==" SADECE GÖRÜNÜŞLERİ EŞİT OLSA YETERLİDİR. EŞİTTİR.
+ * "!=" EŞİT DEĞİLDİR.
+ * "!==" AYNI DEĞİLDİR.
  */
 $x = "2";
 $y = 2;
