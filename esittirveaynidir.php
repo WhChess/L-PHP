@@ -9,3 +9,5 @@ $x = "2";
 $y = 2;
 var_dump($x==$y); // True
 var_dump($x===$y); // False
+var_dump($x!=$y); // False
+var_dump($x!==$y); // True
