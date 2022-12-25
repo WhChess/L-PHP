@@ -1,3 +1,4 @@
+<?php
 /*
 String - $a = "Hello";
 Integer - $a = 0;
@@ -8,3 +9,4 @@ Object
 NULL - $a = NULL;
 Resource
 */
+?>
