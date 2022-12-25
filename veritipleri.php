@@ -1,4 +1,5 @@
 <?php
+define("Pi", 3.14);
 /*
 String - $a = "Hello";
 Integer - $a = 0;
