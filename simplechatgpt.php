@@ -5,17 +5,21 @@ use Tectalic\OpenAi\Authentication;
 use Tectalic\OpenAi\Manager;
 use Tectalic\OpenAi\Models\Completions\CreateRequest;
 
+
 $openaiClient = Manager::build(new \GuzzleHttp\Client([
     'verify' => false,
 ]), new Authentication("TOKEN"));
 $response = $openaiClient->completions()->create(
     new CreateRequest([
-        'model'  => 'text-davinci-003',
-        'prompt' => 'PROMPT',
-        'max_tokens' => 256,
+        'model' => 'text-babbage-001',
+        'prompt' => readline("Metin: \n"),
+        'temperature' => 0.7,
+        'max_tokens' => 1024,
     ])
 )->toModel();
 
+echo "Total tokens used: ";
+echo $response->usage->total_tokens;
 echo $response->choices[0]->text;
-
+echo "\n";
 ?>
