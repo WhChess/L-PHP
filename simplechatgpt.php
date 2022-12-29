@@ -12,9 +12,9 @@ $openaiClient = Manager::build(new \GuzzleHttp\Client([
 $response = $openaiClient->completions()->create(
     new CreateRequest([
         'model' => 'text-babbage-001',
-        'prompt' => readline("Metin: \n"),
+        'prompt' => readline(""),
         'temperature' => 0.7,
-        'max_tokens' => 1024,
+        'max_tokens' => 512,
     ])
 )->toModel();
 
